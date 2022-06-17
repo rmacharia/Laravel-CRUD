@@ -5,7 +5,8 @@
         </h2>
     </x-slot>
 
-    <div>
+    <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
+
         <div class="max-w-4xl mx-auto py-10 sm:px-6 lg:px-8">
             <div class="mt-5 md:mt-0 md:col-span-2">
                 <form action="{{ route('tasks.store') }}" method="POST" enctype="multipart/form-data" >
@@ -27,7 +28,7 @@
                                     />
                             @error('client_name')
                                 <p class="text-sm text-red-600">{{ $message }}</p>
-                            @enderror
+                            @enderror 
                         </div>
                         <div class="px-4 py-5 bg-white sm:p-6">
                             <label for="case_type" class="block font-medium text-sm text-gray-700">Case Type</label>
